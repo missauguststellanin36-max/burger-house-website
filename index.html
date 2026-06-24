@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <link rel="icon" href="images/icon.jpg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Burger House</div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Delicious Fast Food</h1>
+        <p>Fresh Burgers, Crispy Fries & Cold Drinks</p>
+        <a href="#menu" class="btn">Order Now</a>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <h2>Popular Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="card">
+                <img src="images/burger.jpg" alt="Classic Burger">
+                <h3>Classic Burger</h3>
+                <p>$2.49</p>
+            </div>
+
+            <div class="card">
+                <img src="images/French Fries.jpg" alt="French Fries">
+                <h3>French Fries</h3>
+                <p>$1.99</p>
+            </div>
+
+            <div class="card">
+                <img src="images/chicken burgur.jpg" alt="Chicken Burger">
+                <h3>Chicken Burger</h3>
+                <p>$1.99</p>
+            </div>
+
+            <!-- New Item 1: Chicken Wings -->
+            <div class="card">
+                <img src="images/Crispy Chicken Wings.jpg" alt="Crispy Chicken Wings">
+                <h3>Crispy Chicken Wings</h3>
+                <p>$4.99</p>
+            </div>
+            <div class="card">
+                <img src="images/Cheesy Rimen.jpg" alt="Cheesy Rimen">
+                <h3>Cheesy Rimen</h3>
+                <p>$5.49</p>
+            </div>
+            <div class="card">
+                <img src="images/Fried Chicken.jpg" alt="Fried Chicken">
+                <h3>Fried Chicken</h3>
+                <p>$4.99</p>
+            </div>
+            <div class="card">
+                <img src="images/Tteokbokki.jpg" alt="Tteokbokki">
+                <h3>Tteokbokki</h3>
+                <p>$3.99</p>
+            </div>
+            <div class="card">
+                <img src="images/Korn Dog.jpg" alt="Korn Dog">
+                <h3>Korn Dog </h3>
+                <p>$2.99</p>
+
+            </div>
+
+            <!-- New Item 2: Cold Drink -->
+            <div class="card">
+                <img src="images/Cola.jpg" alt="Cold Soda">
+                <h3>Cold Drink (Cola)</h3>
+                <p>$0.99</p>
+            </div>
+            <div class="card">
+                <img src="images/spite.jpg" alt="Sprite">
+                <h3>Cold Drink (Sprite)</h3>
+                <p>$0.99</p>    
+            </div>
+            <div class="card">
+                <img src="images/Pepsi.jpg" alt="Pepsi">
+                <h3>Cold Drink (Pepsi)</h3>
+                <p>$0.99</p>
+            </div>
+            <div class="card">
+                <img src="images/Chocolate Milkshake.jpg" alt="Chocolate Milkshake">
+                <h3>Chocolate Milkshake</h3>
+                <p>$1.99</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We serve fresh and tasty fast food every day.
+            Our mission is to provide high-quality meals at affordable prices.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+            <form>
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <input type="tel" placeholder="Your Phone Number">
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+ (885) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@burgerhouse.com">info@burgerhouse.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Main Street, City, State 12345</p>
+                </div>
+                <div class="info-item">
+                    <h3>Follow Us</h3>
+                    <p>
+                        <a href="https://facebook.com/burgerhouse" target="_blank">Facebook</a> | 
+                        <a href="https://instagram.com/burgerhouse" target="_blank">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Reviews -->
+
+<section class="reviews" id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <h3>John Smith</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>
+                The burgers are fresh and delicious.
+                Great service and fast delivery!
+            </p>
+        </div>
+
+        <div class="review-card">
+            <h3>Sarah Kim</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>
+                Best fast food restaurant in town.
+                The fries are crispy and tasty.
+            </p>
+        </div>
+
+        <div class="review-card">
+            <h3>David Lee</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>
+                Amazing food and affordable prices.
+                I highly recommend the chicken burger.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <p>© 2026 Burger House. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
