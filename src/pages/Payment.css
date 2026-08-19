@@ -168,4 +168,14 @@
     width: min(220px, 100%);
     height: auto;
   }
+
+  .order-item,
+  .total-line {
+    gap: 12px;
+  }
+
+  .order-item span:last-child,
+  .total-line span:last-child {
+    white-space: nowrap;
+  }
 }

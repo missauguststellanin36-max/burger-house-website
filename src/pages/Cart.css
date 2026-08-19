@@ -44,6 +44,7 @@
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #eee;
+  min-width: 0;
 }
 
 .cart-item:last-child {
@@ -198,6 +199,11 @@
 
   .item-details {
     min-width: 0;
+  }
+
+  .item-details h3,
+  .item-details .price {
+    overflow-wrap: anywhere;
   }
 
   .item-details textarea {

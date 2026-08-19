@@ -309,8 +309,12 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  main {
+    min-height: calc(100vh - 52px - 70px);
+  }
+
     .hero h1 {
-        font-size: 2.6rem;
+    font-size: clamp(2.3rem, 12vw, 3.1rem);
     }
 
     .hero p {
@@ -319,6 +323,7 @@ footer p {
 
     .btn {
         width: 100%;
+      max-width: 320px;
     }
 
     input,
@@ -328,6 +333,31 @@ footer p {
 
     .about p {
         padding: 0 14px;
+    }
+
+    .menu h2,
+    .about h2,
+    .contact h2,
+    .reviews h2,
+    .page-links h2,
+    .cart-section h2,
+    .payment-section h2 {
+      font-size: 2.15rem;
+    }
+
+    .menu-container,
+    .page-container,
+    .review-container {
+      grid-template-columns: 1fr;
+    }
+
+    form,
+    .about,
+    .payment-info,
+    .qr-section,
+    .cart-summary,
+    .auth-container {
+      border-radius: 16px;
     }
 }
 
