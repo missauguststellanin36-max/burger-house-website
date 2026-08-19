@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './MenuItemModal.css'
 
-function MenuItemModal({ item, onClose, onAddToCart }) {
+function MenuItemModal({ item, onClose, onDone, onAddToCart }) {
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)
 
@@ -39,7 +39,7 @@ function MenuItemModal({ item, onClose, onAddToCart }) {
           <button className="btn-add-cart" onClick={handleAddToCart} style={{ flex: 1, backgroundColor: added ? '#28a745' : '#ff6b6b', transition: 'all 0.3s' }}>
             {added ? '✓ Added to Cart!' : 'Add to Cart'}
           </button>
-          <button onClick={onClose} style={{ flex: 1, padding: '12px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', fontSize: '16px', cursor: 'pointer' }}>
+          <button onClick={onDone} style={{ flex: 1, padding: '12px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', fontSize: '16px', cursor: 'pointer' }}>
             Done
           </button>
         </div>

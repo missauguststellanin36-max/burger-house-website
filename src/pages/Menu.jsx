@@ -44,7 +44,6 @@ function Menu() {
 
   const handleAddToCart = (item) => {
     addToCart(item)
-    navigate('/cart')
   }
 
   return (
@@ -62,7 +61,12 @@ function Menu() {
         </div>
       </section>
       {selectedItem && (
-        <MenuItemModal item={selectedItem} onClose={() => setSelectedItem(null)} onAddToCart={handleAddToCart} />
+        <MenuItemModal
+          item={selectedItem}
+          onClose={() => setSelectedItem(null)}
+          onDone={() => navigate('/cart')}
+          onAddToCart={handleAddToCart}
+        />
       )}
     </>
   )
