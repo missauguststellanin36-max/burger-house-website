@@ -33,7 +33,7 @@ main {
 
 .hero {
     min-height: 78vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.24)), url("images/burger.jpg") center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.24)), var(--hero-image) center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
