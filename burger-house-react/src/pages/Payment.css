@@ -1,0 +1,166 @@
+.payment-section {
+  padding: 84px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.payment-section h2 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+}
+
+.payment-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+.payment-info,
+.qr-section {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 40px rgba(31, 36, 44, 0.08);
+}
+
+.payment-info h3,
+.qr-section h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #121212;
+}
+
+.order-items {
+  background: #f8fbff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  color: #666;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-total {
+  border-top: 2px solid #d62828;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #666;
+}
+
+.total-line.final {
+  font-weight: 800;
+  font-size: 18px;
+  color: #121212;
+  padding-top: 12px;
+}
+
+.user-info {
+  background: #f8fbff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.user-info p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.qr-code svg {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #d62828;
+  border-radius: 12px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 16px;
+}
+
+.qr-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border: 3px solid #d62828;
+  border-radius: 12px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 16px;
+}
+
+.qr-hint {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.btn-payment {
+  width: 100%;
+  padding: 16px;
+  background: #d62828;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  margin-top: auto;
+}
+
+.btn-payment:hover {
+  background: #b11d1d;
+}
+
+@media (max-width: 1024px) {
+  .payment-container {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-code svg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-info,
+  .qr-section {
+    padding: 24px;
+  }
+
+  .qr-code svg {
+    width: 180px;
+    height: 180px;
+  }
+}
