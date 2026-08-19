@@ -163,4 +163,9 @@
     width: 180px;
     height: 180px;
   }
+
+  .qr-image {
+    width: min(220px, 100%);
+    height: auto;
+  }
 }

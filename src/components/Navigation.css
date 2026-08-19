@@ -82,7 +82,7 @@ nav {
 
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         right: 0;
         background: rgba(214, 40, 40, 0.98);
@@ -106,6 +106,10 @@ nav {
     }
 
     nav {
-        padding: 18px 20px;
+        padding: 14px 18px;
+    }
+
+    .logo {
+        font-size: 1.35rem;
     }
 }
