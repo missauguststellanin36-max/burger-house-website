@@ -29,8 +29,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Enable SPA routes
-        run: cp dist/index.html dist/404.html
+      - name: Prepare SPA routes
+        run: mv dist/src/index.html dist/index.html && rm -rf dist/src && cp dist/index.html dist/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
