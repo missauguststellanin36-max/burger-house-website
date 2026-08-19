@@ -44,7 +44,7 @@ function Menu() {
 
   const handleAddToCart = (item) => {
     addToCart(item)
-    alert(`${item.name} added to cart!`)
+    navigate('/cart')
   }
 
   return (
