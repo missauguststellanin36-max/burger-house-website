@@ -82,7 +82,7 @@ function Payment() {
         <div className="qr-section">
           <h3>Scan to Pay</h3>
           <div className="qr-code">
-            <img src="/images/my-qr.jpg" alt="Payment QR code" className="qr-image" />
+            <img src={`${import.meta.env.BASE_URL}images/my-qr.jpg`} alt="Payment QR code" className="qr-image" />
             <p className="qr-hint">Scan with your phone to pay ${totalAmount.toFixed(2)}</p>
           </div>
 
