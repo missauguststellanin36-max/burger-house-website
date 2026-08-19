@@ -95,7 +95,7 @@ nav {
     }
 
     #menu-toggle:checked ~ .nav-links {
-        max-height: 300px;
+        max-height: 600px;
         padding: 20px 0;
     }
 
